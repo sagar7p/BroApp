@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FB8508C1C892F7E00D59122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB8508B1C892F7E00D59122 /* AppDelegate.swift */; };
+		5FB8508E1C892F7E00D59122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB8508D1C892F7E00D59122 /* ViewController.swift */; };
+		5FB850911C892F7E00D59122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB8508F1C892F7E00D59122 /* Main.storyboard */; };
+		5FB850931C892F7E00D59122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB850921C892F7E00D59122 /* Assets.xcassets */; };
+		5FB850961C892F7E00D59122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB850941C892F7E00D59122 /* LaunchScreen.storyboard */; };
+		5FB850A11C892F7E00D59122 /* BroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB850A01C892F7E00D59122 /* BroTests.swift */; };
+		5FB850AC1C892F7E00D59122 /* BroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB850AB1C892F7E00D59122 /* BroUITests.swift */; };
+		5FB850BA1C89340600D59122 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB850B91C89340600D59122 /* MessageTableViewCell.swift */; };
+		C1A8805F2A3220E8B839F037 /* Pods_Bro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6D453B2C02197D1FBD9F87 /* Pods_Bro.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FB8509D1C892F7E00D59122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB850801C892F7E00D59122 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FB850871C892F7E00D59122;
+			remoteInfo = Bro;
+		};
+		5FB850A81C892F7E00D59122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB850801C892F7E00D59122 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FB850871C892F7E00D59122;
+			remoteInfo = Bro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0471163586F7400686B68E2F /* Pods-Bro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bro/Pods-Bro.release.xcconfig"; sourceTree = "<group>"; };
+		4B544AD7F2080A725E3AC1F3 /* Pods-Bro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bro/Pods-Bro.debug.xcconfig"; sourceTree = "<group>"; };
+		5C6D453B2C02197D1FBD9F87 /* Pods_Bro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB850881C892F7E00D59122 /* Bro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB8508B1C892F7E00D59122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FB8508D1C892F7E00D59122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FB850901C892F7E00D59122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FB850921C892F7E00D59122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FB850951C892F7E00D59122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FB850971C892F7E00D59122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB8509C1C892F7E00D59122 /* BroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB850A01C892F7E00D59122 /* BroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroTests.swift; sourceTree = "<group>"; };
+		5FB850A21C892F7E00D59122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB850A71C892F7E00D59122 /* BroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB850AB1C892F7E00D59122 /* BroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroUITests.swift; sourceTree = "<group>"; };
+		5FB850AD1C892F7E00D59122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB850B91C89340600D59122 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FB850851C892F7E00D59122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A8805F2A3220E8B839F037 /* Pods_Bro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB850991C892F7E00D59122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB850A41C892F7E00D59122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17101D22182D136FD3D4F8F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C6D453B2C02197D1FBD9F87 /* Pods_Bro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FB8507F1C892F7E00D59122 = {
+			isa = PBXGroup;
+			children = (
+				5FB8508A1C892F7E00D59122 /* Bro */,
+				5FB8509F1C892F7E00D59122 /* BroTests */,
+				5FB850AA1C892F7E00D59122 /* BroUITests */,
+				5FB850891C892F7E00D59122 /* Products */,
+				7C0D0AEC2D7FB68C3AF3E51E /* Pods */,
+				17101D22182D136FD3D4F8F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5FB850891C892F7E00D59122 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FB850881C892F7E00D59122 /* Bro.app */,
+				5FB8509C1C892F7E00D59122 /* BroTests.xctest */,
+				5FB850A71C892F7E00D59122 /* BroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FB8508A1C892F7E00D59122 /* Bro */ = {
+			isa = PBXGroup;
+			children = (
+				5FB8508B1C892F7E00D59122 /* AppDelegate.swift */,
+				5FB8508D1C892F7E00D59122 /* ViewController.swift */,
+				5FB8508F1C892F7E00D59122 /* Main.storyboard */,
+				5FB850B91C89340600D59122 /* MessageTableViewCell.swift */,
+				5FB850921C892F7E00D59122 /* Assets.xcassets */,
+				5FB850941C892F7E00D59122 /* LaunchScreen.storyboard */,
+				5FB850971C892F7E00D59122 /* Info.plist */,
+			);
+			path = Bro;
+			sourceTree = "<group>";
+		};
+		5FB8509F1C892F7E00D59122 /* BroTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FB850A01C892F7E00D59122 /* BroTests.swift */,
+				5FB850A21C892F7E00D59122 /* Info.plist */,
+			);
+			path = BroTests;
+			sourceTree = "<group>";
+		};
+		5FB850AA1C892F7E00D59122 /* BroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FB850AB1C892F7E00D59122 /* BroUITests.swift */,
+				5FB850AD1C892F7E00D59122 /* Info.plist */,
+			);
+			path = BroUITests;
+			sourceTree = "<group>";
+		};
+		7C0D0AEC2D7FB68C3AF3E51E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B544AD7F2080A725E3AC1F3 /* Pods-Bro.debug.xcconfig */,
+				0471163586F7400686B68E2F /* Pods-Bro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FB850871C892F7E00D59122 /* Bro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB850B01C892F7E00D59122 /* Build configuration list for PBXNativeTarget "Bro" */;
+			buildPhases = (
+				C3B8BD33F0668BBB0465D5FF /* Check Pods Manifest.lock */,
+				5FB850841C892F7E00D59122 /* Sources */,
+				5FB850851C892F7E00D59122 /* Frameworks */,
+				5FB850861C892F7E00D59122 /* Resources */,
+				1835386BA991951408525C6A /* Embed Pods Frameworks */,
+				91BEC862FA2F7E0ABF639BD2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bro;
+			productName = Bro;
+			productReference = 5FB850881C892F7E00D59122 /* Bro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FB8509B1C892F7E00D59122 /* BroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB850B31C892F7E00D59122 /* Build configuration list for PBXNativeTarget "BroTests" */;
+			buildPhases = (
+				5FB850981C892F7E00D59122 /* Sources */,
+				5FB850991C892F7E00D59122 /* Frameworks */,
+				5FB8509A1C892F7E00D59122 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FB8509E1C892F7E00D59122 /* PBXTargetDependency */,
+			);
+			name = BroTests;
+			productName = BroTests;
+			productReference = 5FB8509C1C892F7E00D59122 /* BroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FB850A61C892F7E00D59122 /* BroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB850B61C892F7E00D59122 /* Build configuration list for PBXNativeTarget "BroUITests" */;
+			buildPhases = (
+				5FB850A31C892F7E00D59122 /* Sources */,
+				5FB850A41C892F7E00D59122 /* Frameworks */,
+				5FB850A51C892F7E00D59122 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FB850A91C892F7E00D59122 /* PBXTargetDependency */,
+			);
+			name = BroUITests;
+			productName = BroUITests;
+			productReference = 5FB850A71C892F7E00D59122 /* BroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FB850801C892F7E00D59122 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sagar Punhani";
+				TargetAttributes = {
+					5FB850871C892F7E00D59122 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F5W4L78R3F;
+					};
+					5FB8509B1C892F7E00D59122 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F5W4L78R3F;
+						TestTargetID = 5FB850871C892F7E00D59122;
+					};
+					5FB850A61C892F7E00D59122 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F5W4L78R3F;
+						TestTargetID = 5FB850871C892F7E00D59122;
+					};
+				};
+			};
+			buildConfigurationList = 5FB850831C892F7E00D59122 /* Build configuration list for PBXProject "Bro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FB8507F1C892F7E00D59122;
+			productRefGroup = 5FB850891C892F7E00D59122 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FB850871C892F7E00D59122 /* Bro */,
+				5FB8509B1C892F7E00D59122 /* BroTests */,
+				5FB850A61C892F7E00D59122 /* BroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FB850861C892F7E00D59122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB850961C892F7E00D59122 /* LaunchScreen.storyboard in Resources */,
+				5FB850931C892F7E00D59122 /* Assets.xcassets in Resources */,
+				5FB850911C892F7E00D59122 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB8509A1C892F7E00D59122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB850A51C892F7E00D59122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1835386BA991951408525C6A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bro/Pods-Bro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91BEC862FA2F7E0ABF639BD2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bro/Pods-Bro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B8BD33F0668BBB0465D5FF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FB850841C892F7E00D59122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB8508E1C892F7E00D59122 /* ViewController.swift in Sources */,
+				5FB8508C1C892F7E00D59122 /* AppDelegate.swift in Sources */,
+				5FB850BA1C89340600D59122 /* MessageTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB850981C892F7E00D59122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB850A11C892F7E00D59122 /* BroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB850A31C892F7E00D59122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB850AC1C892F7E00D59122 /* BroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FB8509E1C892F7E00D59122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FB850871C892F7E00D59122 /* Bro */;
+			targetProxy = 5FB8509D1C892F7E00D59122 /* PBXContainerItemProxy */;
+		};
+		5FB850A91C892F7E00D59122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FB850871C892F7E00D59122 /* Bro */;
+			targetProxy = 5FB850A81C892F7E00D59122 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FB8508F1C892F7E00D59122 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB850901C892F7E00D59122 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FB850941C892F7E00D59122 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB850951C892F7E00D59122 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FB850AE1C892F7E00D59122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FB850AF1C892F7E00D59122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FB850B11C892F7E00D59122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B544AD7F2080A725E3AC1F3 /* Pods-Bro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Bro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.Bro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FB850B21C892F7E00D59122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0471163586F7400686B68E2F /* Pods-Bro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Bro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.Bro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FB850B41C892F7E00D59122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.BroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bro.app/Bro";
+			};
+			name = Debug;
+		};
+		5FB850B51C892F7E00D59122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.BroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bro.app/Bro";
+			};
+			name = Release;
+		};
+		5FB850B71C892F7E00D59122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.BroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Bro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5FB850B81C892F7E00D59122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.BroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Bro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FB850831C892F7E00D59122 /* Build configuration list for PBXProject "Bro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB850AE1C892F7E00D59122 /* Debug */,
+				5FB850AF1C892F7E00D59122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB850B01C892F7E00D59122 /* Build configuration list for PBXNativeTarget "Bro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB850B11C892F7E00D59122 /* Debug */,
+				5FB850B21C892F7E00D59122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB850B31C892F7E00D59122 /* Build configuration list for PBXNativeTarget "BroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB850B41C892F7E00D59122 /* Debug */,
+				5FB850B51C892F7E00D59122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB850B61C892F7E00D59122 /* Build configuration list for PBXNativeTarget "BroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB850B71C892F7E00D59122 /* Debug */,
+				5FB850B81C892F7E00D59122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FB850801C892F7E00D59122 /* Project object */;
+}

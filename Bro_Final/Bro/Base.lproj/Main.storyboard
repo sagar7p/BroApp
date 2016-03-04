@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jKZ-Gn-v5T">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frV-e1-2DY">
+                                <rect key="frame" x="209.5" y="542" width="181.5" height="50"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="BROOOO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="broSend2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iv5-Gj-onV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69T-6J-reR">
+                                <rect key="frame" x="398.5" y="541" width="181.5" height="50.5"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.035294117649999998" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Bruh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="broSend3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lri-sN-MyX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zee-2P-kwS">
+                                <rect key="frame" x="20" y="542" width="181.5" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EGA-Ua-ihf"/>
+                                    <constraint firstAttribute="height" constant="30" id="GWA-CH-eMa"/>
+                                </constraints>
+                                <state key="normal" title="Bro">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GWA-CH-eMa"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="broSend1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AmA-67-pZJ"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W5R-nO-bct">
+                                <rect key="frame" x="0.0" y="64" width="600" height="470.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="message" id="Odj-2W-5Kx" customClass="MessageTableViewCell" customModule="Bro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Odj-2W-5Kx" id="xyn-Ut-WnE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="frV-e1-2DY" firstAttribute="height" secondItem="69T-6J-reR" secondAttribute="height" id="63s-If-9Zq"/>
+                            <constraint firstItem="frV-e1-2DY" firstAttribute="leading" secondItem="zee-2P-kwS" secondAttribute="trailing" constant="8" symbolic="YES" id="8el-6S-jDT"/>
+                            <constraint firstItem="frV-e1-2DY" firstAttribute="width" secondItem="69T-6J-reR" secondAttribute="width" id="B2x-Yh-mhB"/>
+                            <constraint firstItem="frV-e1-2DY" firstAttribute="width" secondItem="zee-2P-kwS" secondAttribute="width" id="CaV-n4-a1J"/>
+                            <constraint firstItem="frV-e1-2DY" firstAttribute="centerY" secondItem="69T-6J-reR" secondAttribute="centerY" id="EUb-TQ-h0J"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="zee-2P-kwS" secondAttribute="leading" id="Fs9-YZ-xPQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="69T-6J-reR" secondAttribute="trailing" id="Ioy-bt-OFJ"/>
+                            <constraint firstItem="W5R-nO-bct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="OpD-Wg-92z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zee-2P-kwS" secondAttribute="bottom" constant="8" symbolic="YES" id="XRi-Oc-2sf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W5R-nO-bct" secondAttribute="trailing" constant="-20" id="Yf7-YW-moy"/>
+                            <constraint firstItem="frV-e1-2DY" firstAttribute="centerY" secondItem="zee-2P-kwS" secondAttribute="centerY" id="aXm-AK-aws"/>
+                            <constraint firstItem="W5R-nO-bct" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gXF-f9-7JK"/>
+                            <constraint firstItem="frV-e1-2DY" firstAttribute="height" secondItem="zee-2P-kwS" secondAttribute="height" id="hqW-2I-yTX"/>
+                            <constraint firstItem="69T-6J-reR" firstAttribute="leading" secondItem="frV-e1-2DY" secondAttribute="trailing" constant="8" id="jqq-0b-90d"/>
+                            <constraint firstItem="zee-2P-kwS" firstAttribute="top" secondItem="W5R-nO-bct" secondAttribute="bottom" constant="8" symbolic="YES" id="qcn-fH-cA3"/>
+                            <constraint firstItem="W5R-nO-bct" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="tRX-i6-Ifm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tRX-i6-Ifm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Messages" id="az5-4Q-gj1">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="poQ-97-eWU">
+                            <connections>
+                                <action selector="clearDatabase:" destination="BYZ-38-t0r" id="chG-W5-VDs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bro1" destination="zee-2P-kwS" id="thl-nz-900"/>
+                        <outlet property="bro2" destination="frV-e1-2DY" id="6te-jI-ebR"/>
+                        <outlet property="bro3" destination="69T-6J-reR" id="Ajz-7h-xSm"/>
+                        <outlet property="tableView" destination="W5R-nO-bct" id="UVV-2v-nKY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9J1-ny-h1d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jKZ-Gn-v5T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TZC-z7-OVS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UfH-31-CW5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4W9-vu-d3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="312"/>
+        </scene>
+    </scenes>
+</document>
